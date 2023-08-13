@@ -48,7 +48,9 @@ router.post("/", async (req, res) => {
               currency: "pkr",
               product_data: {
                 name: String(roomNo),
-                images: [`http://localhost:4000/images/${image}`], // Corrected image URL
+                images: [
+                  `https://the-beverli-hotel.vercel.app/images/${image}`,
+                ], // Corrected image URL
               },
               unit_amount: unitAmount,
             },
